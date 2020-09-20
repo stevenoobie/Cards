@@ -1,15 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6312a3b-419d-44c4-82e6-3d27d4f20f9d" name="Default Changelist" comment="" />
+    <list default="true" id="d6312a3b-419d-44c4-82e6-3d27d4f20f9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="stevenoobie" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Cards" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,6 +161,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hiC66yZgGdceiC0YCNBacT8RUG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -154,17 +193,44 @@
       <option name="presentableId" value="Default" />
       <updated>1600484347519</updated>
       <workItem from="1600484348659" duration="11817000" />
+      <workItem from="1600542234071" duration="926000" />
+      <workItem from="1600555900179" duration="7205000" />
+      <workItem from="1600564333866" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1600488279884">
+    <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1600563920975">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1600488279884" />
+    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1600563920975" />
+    <state x="639" y="336" key="Github.CreatePullRequestDialog" timestamp="1600563759998">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="639" y="336" key="Github.CreatePullRequestDialog/0.0.1739.939@0.0.1739.939" timestamp="1600563759998" />
+    <state x="680" y="319" width="259" height="205" key="Github.ShareDialog" timestamp="1600564600590">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="680" y="319" width="259" height="205" key="Github.ShareDialog/0.0.1739.939@0.0.1739.939" timestamp="1600564600590" />
+    <state x="628" y="174" key="Github.UntrackedFilesDialog" timestamp="1600542321799">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="628" y="174" key="Github.UntrackedFilesDialog/0.0.1739.939@0.0.1739.939" timestamp="1600542321799" />
     <state width="1696" height="248" key="GridCell.Tab.0.bottom" timestamp="1600504188839">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -181,5 +247,9 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state width="1696" height="248" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1600504188839" />
+    <state x="462" y="203" key="Vcs.Push.Dialog.v2" timestamp="1600563625929">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="462" y="203" key="Vcs.Push.Dialog.v2/0.0.1739.939@0.0.1739.939" timestamp="1600563625929" />
   </component>
 </project>

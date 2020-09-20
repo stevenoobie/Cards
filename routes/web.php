@@ -22,6 +22,8 @@ Route::get('/index',[PageController::class,'index'])->name('index');
 
 Route::get('pageController',[PageController::class,'create']);
 
+Route::post('pageController',[PageController::class,'create']);
+
 Route::get('/corrupted_cards',[PageController::class,'corruptedCards'])->name('corruptedCards');
 
 Route::get('/inquiry',[PageController::class,'inquiry'])->name('inquiry');

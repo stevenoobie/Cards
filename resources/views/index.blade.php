@@ -35,31 +35,36 @@
     <a href="{{route('inquiry')}}">INQUIRY</a>
 </div>
 
+
 <div class="container-contact100">
-    @if (session('status-success'))
-        <div class="alert alert-success" role="alert">
-            {{ session('status-success') }}
-        </div>
-    @endif
-
-    @if (session('status-fail'))
-       <div class="alert alert-danger" role="alert">
-           {{ session('status-fail') }}
-       </div>
-    @endif
-
+    
     <div class="wrap-contact100">
 
-        <form class="contact100-form validate-form" action="pageController">
-			
+        <form class="contact100-form validate-form" id="card-form" action="pageController">
+            @csrf
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+            @endif
+
             <span class="contact100-form-title">
 					ADD NEW CARD
-				</span>
+			</span>
+
+            @if(count($errors)>0)
+                <ul>
+                @foreach($errors->all() as $error)
+                    <li class="alert alert-danger" >{{$error}}</li>
+                    @endforeach
+                </ul>
+                @endif
 
             <div class="wrap-input100 input100-select">
                 <span class="label-input100" >CARD TYPE</span>
                 <div>
                     <select id="cardType" name='cardType' class="selection-2">
+                        <option selected="selected" value="0">Select cardType</option>
                         <option value="5">5</option>
                         <option value="10">10</option>
                         <option value="15">15</option>
@@ -78,13 +83,14 @@
 
             <div class="wrap-input100 validate-input"  data-validate = "Valid email is required: ex@abc.xyz">
                 <span class="label-input100">CARD NUMBER </span>
-                <input class="input100" type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+                <input class="input100" type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required autocomplete="cardNumber" autofocus>
+
                 <span class="focus-input100"></span>
             </div>
 
             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
                 <span class="label-input100">CARD SERIAL NUMBER </span>
-                <input class="input100" type="text" id="cardSerialNumber" name="cardSerialNumber" placeholder="Enter card serial number">
+                <input class="input100" type="text" id="cardSerialNumber" name="cardSerialNumber" placeholder="Enter card serial number" required autocomplete="cardSerialNumber" autofocus>
                 <span class="focus-input100"></span>
             </div>
 
@@ -92,13 +98,12 @@
             <div class="container-contact100-form-btn">
                 <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
-                    <button id="submit" class="contact100-form-btn">
+                    <button id="submit" type="submit" class="contact100-form-btn">
 							Submit
                     </button>
                 </div>
             </div>
         </form>
-        <p id="demo"></p>
     </div>
 
 </div>
@@ -146,6 +151,10 @@
 
 
 <script>
+    $("#card-form").submit(function (e){
+       e.preventDefault();
+    });
+
 document.getElementById('submit').onclick=function () { submit() };
 
 
@@ -157,7 +166,7 @@ function submit(){
 
 
 
- if(cardNumber==''||cardSerialNumber==''){
+ /*if(cardNumber==''||cardSerialNumber==''){
      alert("Failed");
  }else {
      card={
@@ -167,7 +176,7 @@ function submit(){
      }
      //alert(card)
  }
-
+*/
 
 }
 </script>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Card;
 
 class PageController extends Controller
 {
@@ -28,7 +29,19 @@ class PageController extends Controller
     }
 
     public function create(Request $request){
-        return $request->input();
+
+        $validatedData = $request->validate([
+            'cardNumber' => 'required|min:3|unique:cards,number',
+            'cardSerialNumber' => 'required|min:3|unique:cards,serialNumber',
+            'cardType'=>'required|gte:5'
+        ]);
+        Card::create([
+            'number'=>$request['cardNumber'],
+            'serialNumber'=>$request['cardSerialNumber'],
+            'type'=>$request['cardType'],
+            'status'=>0
+        ]);
+        return redirect()->route('index')->with('status','Card Added Successfully!');
     }
 
 }
