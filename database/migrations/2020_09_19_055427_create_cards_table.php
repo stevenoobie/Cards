@@ -19,7 +19,9 @@ class CreateCardsTable extends Migration
             $table->string('serialNumber');
             $table->integer('type');
             $table->tinyInteger('status')->default(0);
-            $table->timestamps();
+            //$table->timestamps()->format('Y-m-d');
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 

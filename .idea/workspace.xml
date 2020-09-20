@@ -13,11 +13,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
@@ -29,7 +24,7 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Card.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/available_cards.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/available_cards.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +190,9 @@
       <workItem from="1600484348659" duration="11817000" />
       <workItem from="1600542234071" duration="926000" />
       <workItem from="1600555900179" duration="7205000" />
-      <workItem from="1600564333866" duration="335000" />
+      <workItem from="1600564333866" duration="1490000" />
+      <workItem from="1600606175228" duration="6517000" />
+      <workItem from="1600635617170" duration="4062000" />
     </task>
     <servers />
   </component>
@@ -215,6 +212,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600637034262">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939@0.0.1739.939" timestamp="1600637034262" />
     <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1600563920975">
       <screen x="0" y="0" width="1739" height="939" />
     </state>

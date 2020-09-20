@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\AvailableCardsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ Route::get('/index',[PageController::class,'index'])->name('index');
 
 Route::get('pageController',[PageController::class,'create']);
 
-Route::post('pageController',[PageController::class,'create']);
+//Route::post('pageController',[PageController::class,'create']);
 
 Route::get('/corrupted_cards',[PageController::class,'corruptedCards'])->name('corruptedCards');
 
@@ -32,4 +33,9 @@ Route::get('/paybill',[PageController::class,'paybill'])->name('paybill');
 
 Route::get('/used_cards',[PageController::class,'usedCards'])->name('usedCards');
 
-Route::get('/available_cards',[PageController::class,'availableCards'])->name('availableCards');
+Route::get('/available_cards',[AvailableCardsController::class,'index'])->name('availableCards');
+
+Route::get('availableCardsDate',[AvailableCardsController::class,'date']);
+
+//Route::get('availableCardsController',[AvailableCardsController::class,'date']);
+

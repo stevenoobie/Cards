@@ -10,4 +10,5 @@ class Card extends Model
     use HasFactory;
 
     protected $fillable=['type','number','serialNumber'];
+
 }

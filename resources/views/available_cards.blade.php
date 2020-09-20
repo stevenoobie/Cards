@@ -39,15 +39,21 @@
 <div class="container-contact100">
     <div class="wrap-contact100">
 
-        <form class="form-inline" >
-            <div class="form-group">
+
+        @if($givenDate!=0)
+            <span>Picked Date: {{$givenDate}}</span>
+        @endif
+
+        <form class="form-inline validate-form" id="form" action="availableCardsDate">
+            @csrf
+            <div class="form-group" >
                 <label for="date">DATE:</label>
-                <input type="date" class="form-control" id="date" name="date">
+                <input type="date" class="form-control" id="date" name="date" required>
             </div>
             <div class="container-contact100-form-btn">
                 <div class="wrap-contact100-form-btn">
                     <div class="contact100-form-bgbtn"></div>
-                    <button class="contact100-form-btn">
+                    <button class="contact100-form-btn" type="submit" id="submit">
 							<span>
 								SUBMIT
 								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
@@ -81,17 +87,17 @@
         </tr>
         <tr>
             <td>quantity</td>
-            <td>30</td>
-            <td>50</td>
-            <td>30</td>
-            <td>50</td>
-            <td>30</td>
-            <td>50</td>
-            <td>30</td>
-            <td>50</td>
-            <td>30</td>
-            <td>50</td>
-            <td>30</td>
+            <td>{{$type_numbers['5']}}</td>
+            <td>{{$type_numbers['10']}}</td>
+            <td>{{$type_numbers['15']}}</td>
+            <td>{{$type_numbers['25']}}</td>
+            <td>{{$type_numbers['30']}}</td>
+            <td>{{$type_numbers['40']}}</td>
+            <td>{{$type_numbers['50']}}</td>
+            <td>{{$type_numbers['60']}}</td>
+            <td>{{$type_numbers['75']}}</td>
+            <td>{{$type_numbers['100']}}</td>
+            <td>{{$type_numbers['150']}}</td>
 
         </tr>
 
@@ -100,7 +106,7 @@
     <div class="wrap-contact100">
         <h4>
 
-            total credit:
+            total credit:   {{$type_numbers['totalAmount']}}
 
         </h4>
 
@@ -147,6 +153,14 @@
 
     gtag('config', 'UA-23581568-13');
 </script>
+
+<!-- By Oussy-->
+<script>
+    $("#form").submit(function (e){
+        e.preventDefault();
+    });
+</script>
+
 
 </body>
 </html>

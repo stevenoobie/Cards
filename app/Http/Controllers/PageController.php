@@ -12,9 +12,7 @@ class PageController extends Controller
         return view('index');
     }
 
-    public function availableCards(){
-        return view('available_cards');
-    }
+
     public function corruptedCards(){
         return view('corrupted_cards');
     }
