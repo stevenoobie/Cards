@@ -129,7 +129,7 @@
                     <td>{{$card['type']}}</td>
                     <td>{{$card['number']}}</td>
                     <td>{{$card['serialNumber']}}</td>
-                    <td>{{$card['created_at']->format('d/m/Y')}}</td>
+                    <td>{{$card['updated_at']->format('d/m/Y')}}</td>
                 </tr>
             @endforeach
         </table>
