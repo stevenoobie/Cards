@@ -115,7 +115,7 @@
 
     </div>
 
-    <div style="height:200px;overflow:auto;margin-bottom: 25px; margin-top: 25px; }">
+    <div style="height:250px;overflow:auto;margin-bottom: 25px; margin-top: 25px; }">
         <table  style="width:900px; height:100px; border: 1px solid #f2f2f2;   border-radius: 8px; ">
 
             <tr>

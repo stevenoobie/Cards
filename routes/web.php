@@ -16,9 +16,7 @@ use App\Http\Controllers\UsedCardsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class,'index']);
 
 Route::get('/index',[PageController::class,'index'])->name('index');
 
