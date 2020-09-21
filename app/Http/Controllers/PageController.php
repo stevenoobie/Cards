@@ -10,7 +10,7 @@ class PageController extends Controller
     //Add new Card
     public function index(){
         return view('index');
-    }
+        }
 
 
     public function corruptedCards(){
@@ -19,9 +19,7 @@ class PageController extends Controller
     public function paybill(){
         return view('paybill');
     }
-    public function usedCards(){
-        return view('used_cards');
-    }
+
     public function inquiry(){
         return view('inquiry');
     }

@@ -67,57 +67,88 @@
 
     </div>
 
-
-
-    <table style="width:70%">
-        <tr>
-            <th>card type</th>
-            <th>5</th>
-            <th>10</th>
-            <th>15</th>
-            <th>25</th>
-            <th>30</th>
-            <th>40</th>
-            <th>50</th>
-            <th>60</th>
-            <th>75</th>
-            <th>100</th>
-            <th>150</th>
-
-        </tr>
-        <tr>
-            <td>quantity</td>
-            <td>{{$type_numbers['5']}}</td>
-            <td>{{$type_numbers['10']}}</td>
-            <td>{{$type_numbers['15']}}</td>
-            <td>{{$type_numbers['25']}}</td>
-            <td>{{$type_numbers['30']}}</td>
-            <td>{{$type_numbers['40']}}</td>
-            <td>{{$type_numbers['50']}}</td>
-            <td>{{$type_numbers['60']}}</td>
-            <td>{{$type_numbers['75']}}</td>
-            <td>{{$type_numbers['100']}}</td>
-            <td>{{$type_numbers['150']}}</td>
-
-        </tr>
-
-    </table>
     <style>
+
         table {
-            border-collapse: collapse;
-            border-spacing: 0;
+            /* border-collapse: collapse;
+             border-spacing: 0; */
+            border-collapse:separate;
+            border:solid black 1px;
+            border-radius:6px;
+            -moz-border-radius:6px;
             border: 1px solid #ddd;
+
         }
 
         th, td {
             text-align: left;
             padding: 8px;
+            border-radius: 8px;
         }
 
         tr:nth-child(even){background-color: #f2f2f2}
+        tr:nth-child(odd){background-color: #f2f2f2}
+
+        th:nth-child(odd){background-color: #8b4caf ; color: white;}
+        th:nth-child(even){background-color: #8b4caf; color: white;}
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #aaaaaa ;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b4caf ;
+        }
+
     </style>
-    <div>
-        <table style="width:100%; border: 1px solid black">
+    <div style="height:100px;overflow:auto;margin-bottom: 25px; margin-top: 25px; }">
+        <table style="width:900px; height:10px; border: 1px solid #f2f2f2;   border-radius: 8px;
+ ">
+            <tr>
+                <th>card type</th>
+                <th>5</th>
+                <th>10</th>
+                <th>15</th>
+                <th>25</th>
+                <th>30</th>
+                <th>40</th>
+                <th>50</th>
+                <th>60</th>
+                <th>75</th>
+                <th>100</th>
+                <th>150</th>
+
+            </tr>
+            <tr>
+                <td>quantity</td>
+                <td>{{$type_numbers['5']}}</td>
+                <td>{{$type_numbers['10']}}</td>
+                <td>{{$type_numbers['15']}}</td>
+                <td>{{$type_numbers['25']}}</td>
+                <td>{{$type_numbers['30']}}</td>
+                <td>{{$type_numbers['40']}}</td>
+                <td>{{$type_numbers['50']}}</td>
+                <td>{{$type_numbers['60']}}</td>
+                <td>{{$type_numbers['75']}}</td>
+                <td>{{$type_numbers['100']}}</td>
+                <td>{{$type_numbers['150']}}</td>
+
+            </tr>
+        </table>
+    </div>
+    <div style="height:250px;overflow:auto;margin-bottom: 25px">
+        <table style="width:900px; height:10px; border: 1px solid #f2f2f2;   border-radius: 8px; ">
             <tr>
                 <th>card type</th>
                 <th>card number</th>

@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6312a3b-419d-44c4-82e6-3d27d4f20f9d" name="Default Changelist" comment="" />
+    <list default="true" id="d6312a3b-419d-44c4-82e6-3d27d4f20f9d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_19_055427_create_cards_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/available_cards.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/available_cards.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/used_cards.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/used_cards.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +38,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubProjectSettings">
@@ -186,7 +199,7 @@
       <workItem from="1600564333866" duration="1490000" />
       <workItem from="1600606175228" duration="6517000" />
       <workItem from="1600635617170" duration="4644000" />
-      <workItem from="1600669563053" duration="2670000" />
+      <workItem from="1600669563053" duration="8958000" />
     </task>
     <servers />
   </component>
@@ -206,10 +219,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600637034262">
+    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600672863800">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939@0.0.1739.939" timestamp="1600637034262" />
+    <state x="600" y="225" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1739.939@0.0.1739.939" timestamp="1600672863800" />
     <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1600563920975">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -246,5 +259,20 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="462" y="203" key="Vcs.Push.Dialog.v2/0.0.1739.939@0.0.1739.939" timestamp="1600563625929" />
+    <state x="527" y="216" key="run.anything.popup" timestamp="1600673947232">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="527" y="216" key="run.anything.popup/0.0.1739.939@0.0.1739.939" timestamp="1600673947232" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/available_cards.blade.php</url>
+          <line>70</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
