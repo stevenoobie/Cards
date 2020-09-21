@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AvailableCardsController extends Controller
 {
     public function index(){
-        $available_cards=Card::where('status',0)->get();
+        $available_cards=Card::where('status',0)->orderBy('created_at')->get();
         $type_numbers=['5'=>0,'10'=>0,'15'=>0,'25'=>0,'30'=>0,'40'=>0,'50'=>0,'60'=>0,'75'=>0,'100'=>0,'150'=>0,'totalAmount'=>0];
 
 

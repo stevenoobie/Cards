@@ -102,6 +102,39 @@
         </tr>
 
     </table>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+    </style>
+    <div>
+        <table style="width:100%; border: 1px solid black">
+            <tr>
+                <th>card type</th>
+                <th>card number</th>
+                <th>card serial number</th>
+                <th>date</th>
+            </tr>
+            @foreach($available_cards as $card)
+                <tr>
+                    <td>{{$card['type']}}</td>
+                    <td>{{$card['number']}}</td>
+                    <td>{{$card['serialNumber']}}</td>
+                    <td>{{$card['created_at']->format('d/m/Y')}}</td>
+                </tr>
+            @endforeach
+        </table>
+    </div>
+
 
     <div class="wrap-contact100">
         <h4>
@@ -164,4 +197,3 @@
 
 </body>
 </html>
-
