@@ -75,6 +75,6 @@ class UsedCardsController extends Controller
             +100*$type_numbers['100']
             +150*$type_numbers['150'];
         return view('used_cards')->with(['used_cards'=>$used_cards,'givenDate'=>$chosen_date,'type_numbers'=>$type_numbers]);
-
+        //Oss
     }
 }
